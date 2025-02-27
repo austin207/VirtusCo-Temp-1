@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowRight, Mail, Github, Linkedin, Twitter } from "lucide-react"
+import Image from 'next/image'
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -280,17 +281,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <img
-                  alt="Advanced Robotics Solutions"
-                  className="rounded-lg object-cover shadow-lg border"
-                  height="400"
-                  src="/robotics.jpg"
-                  style={{
-                    aspectRatio: "600/400",
-                    objectFit: "cover",
-                  }}
-                  width="600"
-                />
+              <Image
+                alt="Advanced Robotics Solutions"
+                src="/robotics.jpg" // Ensure the path is correct
+                width={600}
+                height={400}
+                className="rounded-lg object-cover shadow-lg border"
+/>
               </div>
             </div>
           </div>
