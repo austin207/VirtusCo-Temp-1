@@ -9,9 +9,9 @@ export function RobotAnimation() {
     const canvas = canvasRef.current
     if (!canvas) return
 
-    const ctx = canvas.getContext("2d")
-    if (!ctx) return
-
+    // Use non-null assertion to tell TypeScript that ctx is not null.
+    const ctx = canvas.getContext("2d")!
+    
     // Set canvas dimensions
     canvas.width = 400
     canvas.height = 400
@@ -28,8 +28,10 @@ export function RobotAnimation() {
     let growing = true
 
     function drawRobot() {
+      // Store canvas reference to avoid null checks
+      const currentCanvas = canvasRef.current!
       // Clear canvas
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      ctx.clearRect(0, 0, currentCanvas.width, currentCanvas.height)
 
       // Body
       ctx.fillStyle = bodyColor
@@ -128,4 +130,3 @@ export function RobotAnimation() {
     </div>
   )
 }
-
