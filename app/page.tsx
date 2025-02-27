@@ -66,19 +66,19 @@ export default function Home() {
                       <span className="sr-only">Twitter</span>
                     </Button>
                   </Link>
-                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/VirtusCo" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
                       <Github className="h-4 w-4" />
                       <span className="sr-only">GitHub</span>
                     </Button>
                   </Link>
-                  <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.linkedin.com/company/virtusco/" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
                       <Linkedin className="h-4 w-4" />
                       <span className="sr-only">LinkedIn</span>
                     </Button>
                   </Link>
-                  <Link href="mailto:info@virtusco.com">
+                  <Link href="mailto:virtusco.tech@gmail.com">
                     <Button size="icon" variant="ghost">
                       <Mail className="h-4 w-4" />
                       <span className="sr-only">Email</span>
