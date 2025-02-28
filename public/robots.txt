@@ -3,5 +3,5 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-# Sitemaps
+# Correct sitemap URL
 Sitemap: https://virtusco.in/sitemap.xml
