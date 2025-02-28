@@ -121,7 +121,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 📞 Contact
 - Website: [https://virtusco.in](https://virtusco.in)
-- Email: contact@virtusco.in
+- Email: virtusco.tech@gmail.com
 - LinkedIn: [VirtusCo LinkedIn](https://linkedin.com/company/virtusco)
 
 ## 🙏 Acknowledgments
