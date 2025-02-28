@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"], // Same image as OpenGraph
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-icon.png', // Add this icon to your public folder
+    icon: '/favicon-32x32.png',
+    apple: '/apple-touch-icon.png', // Add this icon to your public folder
   },
-  manifest: '/manifest.json', // Consider adding a web manifest for PWA support
+  manifest: '/site.webmanifest', // Consider adding a web manifest for PWA support
 }
 
 export default function RootLayout({
