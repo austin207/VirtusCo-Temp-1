@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://virtusco.com/sitemap.xml
+Sitemap: https://virtusco.in/sitemap.xml
