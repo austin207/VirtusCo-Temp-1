@@ -2,22 +2,22 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import JsonLd from './components/JsonLd'
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "VirtusCo - Coming Soon | Innovative Robotics Solutions",
-  description:
-    "VirtusCo is a robotics solutions company developing innovative automation systems while bridging the gap between people who lack resources and those who have resources to nurture talent.",
+  title: 'VirtusCo - Innovative Robotics & Automation Solutions in India',
+  description: 'Leading robotics company in India providing cutting-edge automation solutions for manufacturing and industry. Expert robotics integration, custom automation systems, and innovative technology solutions.',
   keywords: [
-    "robotics",
-    "automation",
-    "industrial automation",
-    "robotics education",
-    "robotics solutions",
-    "VirtusCo",
-    "technology innovation",
-    "robotics engineering",
+    'robotics company india',
+    'automation solutions',
+    'industrial robotics',
+    'manufacturing automation',
+    'robotics integration',
+    'automation technology india',
+    'industrial automation solutions',
+    'smart manufacturing solutions'
   ],
   authors: [{ name: "VirtusCo" }],
   creator: "VirtusCo",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     icon: '/favicon-32x32.png',
     apple: '/apple-touch-icon.png', // Add this icon to your public folder
   },
-  manifest: '/site.webmanifest', // Consider adding a web manifest for PWA support
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({
@@ -59,6 +59,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <JsonLd />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemaps
 Sitemap: https://virtusco.in/sitemap.xml
