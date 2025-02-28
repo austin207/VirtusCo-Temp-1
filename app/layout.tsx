@@ -7,8 +7,12 @@ import JsonLd from './components/JsonLd'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'VirtusCo - Innovative Robotics & Automation Solutions in India',
-  description: 'Leading robotics company in India providing cutting-edge automation solutions for manufacturing and industry. Expert robotics integration, custom automation systems, and innovative technology solutions.',
+  metadataBase: new URL('https://virtusco.in'),
+  title: {
+    default: 'VirtusCo - Industrial Robotics & Automation Solutions India',
+    template: '%s | VirtusCo'
+  },
+  description: 'Leading industrial robotics company in India providing automation solutions, robotic integration, and smart manufacturing systems for Industry 4.0',
   keywords: [
     'robotics company india',
     'automation solutions',
@@ -22,14 +26,24 @@ export const metadata: Metadata = {
   authors: [{ name: "VirtusCo" }],
   creator: "VirtusCo",
   publisher: "VirtusCo",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://virtusco.in",
-    title: "VirtusCo - Bridging the Gap in Robotics Innovation",
-    description: "VirtusCo is a robotics solutions company developing innovative automation systems.",
-    siteName: "VirtusCo",
+    title: 'VirtusCo - Industrial Robotics & Automation Solutions',
+    description: 'Leading industrial robotics company in India providing automation solutions, robotic integration, and smart manufacturing systems',
+    url: 'https://virtusco.in',
+    siteName: 'VirtusCo',
+    locale: 'en_IN',
+    type: 'website',
     images: [
       {
         url: "/og-image.jpg", // Make sure to add this image to your public folder
@@ -50,6 +64,9 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png', // Add this icon to your public folder
   },
   manifest: '/manifest.json',
+  verification: {
+    google: 'your-google-site-verification-code', // Add this from Google Search Console
+  }
 }
 
 export default function RootLayout({
