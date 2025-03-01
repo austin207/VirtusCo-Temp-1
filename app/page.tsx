@@ -68,7 +68,7 @@ export default function Home() {
                       <span className="sr-only">X (formerly Twitter)</span>
                     </Button>
                   </Link>
-                  <Link href="https://www.instagram.com/virtuscotech/" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.instagram.com/virtuscotech?igsh=MWw4dW01MHF0cDM3dA==" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
                       <Instagram className="h-4 w-4" />
                       <span className="sr-only">Instagram</span>
