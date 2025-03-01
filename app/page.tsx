@@ -62,7 +62,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                <Link href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://x.com/VirtuscoTech" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
                       <XIcon className="h-4 w-4" />
                       <span className="sr-only">X (formerly Twitter)</span>
