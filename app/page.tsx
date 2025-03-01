@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { ArrowRight, Mail, Github, Linkedin, Twitter } from "lucide-react"
-import Image from 'next/image'
+import { ArrowRight, Mail, Github, Linkedin, Instagram } from "lucide-react"
+import { XIcon } from "@/components/icons/x-icon"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -38,7 +38,7 @@ export default function Home() {
                     Bridging the Gap in Robotics Innovation
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                    VirtusCo is launching soon. We&apos;re on a mission to connect talent with resources in the world of
+                    VirtusCo is launching soon. We're on a mission to connect talent with resources in the world of
                     robotics.
                   </p>
                 </div>
@@ -61,16 +61,16 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://x.com" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
-                      <Twitter className="h-4 w-4" />
-                      <span className="sr-only">Twitter</span>
+                      <XIcon className="h-4 w-4" />
+                      <span className="sr-only">X (formerly Twitter)</span>
                     </Button>
                   </Link>
-                  <Link href="https://github.com/VirtusCo" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.instagram.com/virtuscotech/" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
-                      <Github className="h-4 w-4" />
-                      <span className="sr-only">GitHub</span>
+                      <Instagram className="h-4 w-4" />
+                      <span className="sr-only">Instagram</span>
                     </Button>
                   </Link>
                   <Link href="https://www.linkedin.com/company/virtusco/" target="_blank" rel="noopener noreferrer">
@@ -100,7 +100,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About VirtusCo</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   VirtusCo is a pioneering robotics solutions company at the forefront of technological innovation.
-                  We&apos;re dedicated to creating advanced robotics systems that solve real-world problems.
+                  We're dedicated to creating advanced robotics systems that solve real-world problems.
                 </p>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Innovation</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
-                  Pushing the boundaries of what&apos;s possible in robotics technology.
+                  Pushing the boundaries of what's possible in robotics technology.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-4 shadow-sm">
@@ -197,12 +197,12 @@ export default function Home() {
                   <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                     At VirtusCo, we believe that talent is universal, but opportunity is not. Our mission is to bridge
                     the gap between those who lack resources and those who have resources to nurture talent in the field
-                    of robotics. Through innovative robotic solutions, we&apos;re democratizing access to cutting-edge
+                    of robotics. Through innovative robotic solutions, we're democratizing access to cutting-edge
                     technology.
                   </p>
                   <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 mt-2">
                     Our robotic solutions range from industrial automation and educational platforms to healthcare
-                    assistance systems and agricultural technology. We&apos;re committed to developing accessible,
+                    assistance systems and agricultural technology. We're committed to developing accessible,
                     affordable, and adaptable robotics that solve real-world problems.
                   </p>
                 </div>
@@ -281,13 +281,17 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-              <Image
-                alt="Advanced Robotics Solutions"
-                src="/robotics.jpg" // Ensure the path is correct
-                width={600}
-                height={400}
-                className="rounded-lg object-cover shadow-lg border"
-/>
+                <img
+                  alt="Advanced Robotics Solutions"
+                  className="rounded-lg object-cover shadow-lg border"
+                  height="400"
+                  src="https://images.unsplash.com/photo-1581092921461-7031e8fbc93e?q=80&w=600&h=400&auto=format&fit=crop"
+                  style={{
+                    aspectRatio: "600/400",
+                    objectFit: "cover",
+                  }}
+                  width="600"
+                />
               </div>
             </div>
           </div>
@@ -341,7 +345,7 @@ export default function Home() {
               <div className="flex flex-col space-y-2 border rounded-lg p-6 shadow-sm">
                 <h3 className="text-xl font-bold">Research & Development</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Collaborative R&D initiatives that push the boundaries of what&apos;s possible in robotics and automation.
+                  Collaborative R&D initiatives that push the boundaries of what's possible in robotics and automation.
                 </p>
               </div>
             </div>
